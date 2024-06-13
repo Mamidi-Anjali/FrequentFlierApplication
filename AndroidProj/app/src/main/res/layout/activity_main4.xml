@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/award_id_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Flight"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/departure_time_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Departure Time"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/arrival_time_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arrival Time"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/miles_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Miles"
+        android:paddingTop="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp">
+
+        <TableLayout
+            android:id="@+id/flight_info_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:shrinkColumns="*"
+            android:divider="@android:color/darker_gray"
+            android:showDividers="middle" />
+
+    </ScrollView>
+
+</LinearLayout>
